@@ -116,7 +116,7 @@ public class Address
 	public String toString()
 	{
 		//Merges the Strings
-		String s = StreetAddress + "|" + State + "|" + City + "|" + zipCode;
+		String s = StreetAddress + "|" + City + "|" + State +  "|" + zipCode;
 		
 		//Returns them
 		return s;
@@ -128,8 +128,8 @@ public class Address
 	public void printAll()
 	{
 		System.out.println("StreetAdress: " +  StreetAddress);
-		System.out.println("State: " + State);
 		System.out.println("City: " + City);
+		System.out.println("State: " + State);
 		System.out.println("zipCode: " + zipCode);
 	}
 	
