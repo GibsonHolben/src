@@ -36,7 +36,7 @@ public class Address
 	 * @param City The new City
 	 * @param zipCode The new zipCode
 	 */
-	Address(String StreetAddress, String State, String City, int zipCode)
+	Address(String StreetAddress, String City, String State, int zipCode)
 	{
 		this.StreetAddress  = 			StreetAddress;
 		this.State 			= 			State;

@@ -20,19 +20,19 @@ public class AddressDriver
 		
 		//Testing the overloaded constructor
 		System.out.println("**********************************A2");
-		Address A2 = new Address("4934 Pear Lane", "Mi", "Clarkston", 48353);
+		Address A2 = new Address("4934 Pear Lane", "Clarckton", "MI", 48353);
 		testGettersAndSetters(A2);
 		System.out.println("************************************\n");
 		
 		//Test toString
 		System.out.println("**********************************A3");
-		Address A3 = new Address("8534 rock Lane", "FL", "Orlando", 47293);
+		Address A3 = new Address("8534 rock Lane", "Orlando", "FL", 47293);
 		System.out.println(A3.toString());
 		System.out.println("************************************\n");
 		
 		//Test toString
 		System.out.println("**********************************A4");
-		Address A4 = new Address("842397 boring road", "MI", "Madison Heights", 58202);
+		Address A4 = new Address("842397 boring road", "Madison Heights", "MI", 58202);
 		A4.printAll();
 		System.out.println("************************************\n");
 		
