@@ -132,6 +132,4 @@ public class Address
 		System.out.println("State: " + State);
 		System.out.println("zipCode: " + zipCode);
 	}
-	
-	
 }
