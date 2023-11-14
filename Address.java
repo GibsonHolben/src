@@ -7,19 +7,19 @@ public class Address
 {	
 	/**The City that the building is located in
 	 * Default = Blank*/
-	private String City = " ";
+	private String 	City 			= " ";
 	
 	/**The state that the building is located in
 	 * Default = Blank*/
-	private String State = "";
+	private String 	State 			= "";
 	
 	/** The street and house number of the building
 	 * Default = Blank*/
-	private String StreetAddress = "";
+	private String 	StreetAddress 	= "";
 	
 	/**The Zip Code of the building
 	 * Default = 0*/
-	private int zipCode = 0;
+	private int 	zipCode 		= 0;
 	
 	/**
 	 * Overides the default constructor
@@ -108,9 +108,9 @@ public class Address
 		this.zipCode = zipCode;
 	}
 	
-	
 	/**
 	 * Returns the variables of Address in a CSV formated String
+	 * Deliminator = |
 	 * @return StreetAddress|City|zipCode
 	 */
 	public String toString()
@@ -127,7 +127,7 @@ public class Address
 	 */
 	public void printAll()
 	{
-		System.out.println("StreetAdress: " +  StreetAddress);
+		System.out.println("Street Address: " +  StreetAddress);
 		System.out.println("City: " + City);
 		System.out.println("State: " + State);
 		System.out.println("zipCode: " + zipCode);

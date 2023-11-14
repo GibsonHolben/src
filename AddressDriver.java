@@ -32,7 +32,8 @@ public class AddressDriver
 		
 		//Test toString
 		System.out.println("**********************************A4");
-		Address A4 = new Address("842397 boring road", "Madison Heights", "MI", 58202);
+		Address A4 = new Address("842397 boring road",
+				"Madison Heights", "MI", 58202);
 		A4.printAll();
 		System.out.println("************************************\n");
 		
