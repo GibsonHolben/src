@@ -7,11 +7,10 @@ import java.time.LocalDate;
 public class Id 
 {
 	/**
-	 * Calculates an idntification number and returns the value
-	 *  
-	 * @return amount + curent date (yyyy/mm/dd)
+	 * Calculates an idntification number and then returns it
 	 * 
-	 * @param amount a number (such as the amount of said object that has been crated) 
+	 * @return amount + curent date (yyyy/mm/dd)
+	 * @param amount A number (such as the amount of said object that has been created) 
 	 */
 	public static int CalculateIdentification(int amount) 
 	{

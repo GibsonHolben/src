@@ -76,11 +76,11 @@ public class Building
 	/**
 	* Overload constructor
 	*
-	* @param StreetAddress - the address of the building .
-	* @param State - the state that the building is in.
-	* @param City - the city the building is in.
-	* @param zip - the zip code for the building.
-	* @param Floors - how many floors that are in the building.
+	* @param StreetAddress  - the address of the building .
+	* @param State 			- the state that the building is in.
+	* @param City 			- the city the building is in.
+	* @param zip 			- the zip code for the building.
+	* @param Floors 		- how many floors that are in the building.
 	*/
 	Building(String StreetAddress, String State, String City, int zip, int Floors)
 	{
@@ -88,21 +88,21 @@ public class Building
 		ID = Building.totalNumberofBuilding;
 		A1 = new Address(StreetAddress,State,City,zip);
 		this.floors = Floors;
-		System.out.println("Stop");
+		//System.out.println("Stop");
 	}
 	
 	/**
 	*
-	* @param StreetAddress - The address of the building .
-	* @param State - The state that the building is in.
-	* @param City - The city the building is in.
-	* @param zip - The zip code for the building.
-	* @param Floors - How many floors that are in the building.
-	* @param Foundation - The type of foundation for the building
-	* @param Roof - The type of roof on the building.
-	* @param Rooms - How many rooms that are in the building.
-	* @param length - The length of the building.
-	* @param width - The width of the building.
+	* @param StreetAddress 	- The address of the building .
+	* @param State 			- The state that the building is in.
+	* @param City 			- The city the building is in.
+	* @param zip 			- The zip code for the building.
+	* @param Floors 		- How many floors that are in the building.
+	* @param Foundation		- The type of foundation for the building
+	* @param Roof 			- The type of roof on the building.
+	* @param Rooms 			- How many rooms that are in the building.
+	* @param length 		- The length of the building.
+	* @param width 			- The width of the building.
 	*/
 	Building(String StreetAddress, String State, String City, int zip,
 	int Floors, String Foundation,String Roof,
@@ -117,7 +117,7 @@ public class Building
 		this.rooms = Rooms;
 		this.length = length;
 		this.width = width;
-		System.out.println("Stop");
+		//System.out.println("Stop");
 	}
 	
 	/**
