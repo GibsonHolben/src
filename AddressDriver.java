@@ -8,11 +8,11 @@ public class AddressDriver
 
 	/**
 	 * The main method of the driver
-	 * @param args Unused
+	 * @param args Unused by this programm	
 	 */
 	public static void main(String[] args) 
 	{
-		//Testing the dafualt constructor
+		//Testing the dafualt constructor 
 		System.out.println("**********************************A1");
 		Address A1 = new Address();
 		System.out.println(A1);
