@@ -8,7 +8,7 @@ public class Id
 {
 	/**
 	 * Calculates an idntification number and returns the value
-	 *  = 
+	 *  
 	 * @return amount + curent date (yyyy/mm/dd)
 	 * 
 	 * @param amount a number (such as the amount of said object that has been crated) 
