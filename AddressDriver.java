@@ -15,7 +15,7 @@ public class AddressDriver
 		//Testing the dafualt constructor
 		System.out.println("**********************************A1");
 		Address A1 = new Address();
-		System.out.println("A1");
+		System.out.println(A1);
 		System.out.println("************************************\n");
 		
 		//Testing the overloaded constructor
