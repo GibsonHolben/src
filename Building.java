@@ -64,7 +64,7 @@ public class Building
 	
 	/**
 	* Default Constructor
-	* Adds up the number of Composers
+	* Adds up the number of buildings
 	*
 	*/
 	Building()
@@ -82,11 +82,11 @@ public class Building
 	* @param zip 			- the zip code for the building.
 	* @param Floors 		- how many floors that are in the building.
 	*/
-	Building(String StreetAddress, String State, String City, int zip, int Floors)
+	Building(Address a1, int Floors)
 	{
 		Building.totalNumberofBuilding = Building.totalNumberofBuilding +1;
 		ID = Building.totalNumberofBuilding;
-		A1 = new Address(StreetAddress,State,City,zip);
+		A1 = a1;
 		this.floors = Floors;
 		//System.out.println("Stop");
 	}

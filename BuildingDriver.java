@@ -5,7 +5,8 @@ public class BuildingDriver
 	{
 		Building BG1 = new Building();
 		//Testing
-		Building BG2 = new Building("123 Rainbow lane", "MI", "Detroit", 48203, 2);
+		Address A1 = new Address("4934 Pear2 Lane", "Clarkston2", "MI", 48353);
+		Building BG2 = new Building(A1, 2);
 		
 		Building BG3 = new Building("123 Rainbow lane", "MI", "Detroit",
 		48203, 2, "Strong", "Shingles", 4, 14.3f, 23f);
