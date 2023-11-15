@@ -20,7 +20,7 @@ public class AddressDriver
 		
 		//Testing the overloaded constructor
 		System.out.println("**********************************A2");
-		Address A2 = new Address("4934 Pear Lane", "Clarckton", "MI", 48353);
+		Address A2 = new Address("4934 Pear Lane", "Clarkston", "MI", 48353);
 		testGettersAndSetters(A2);
 		System.out.println("************************************\n");
 		
