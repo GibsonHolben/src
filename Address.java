@@ -34,6 +34,7 @@ public class Address
 	 * Address with all the variables passed in
 	 * @param StreetAddress The new StreetAddress
 	 * @param City The new City
+	 * @param State the state that the building is in
 	 * @param zipCode The new zipCode
 	 */
 	Address(String StreetAddress, String City, String State, int zipCode)

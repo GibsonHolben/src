@@ -75,11 +75,7 @@ public class Building
 	}
 	/**
 	* Overload constructor
-	*
-	* @param StreetAddress  - the address of the building .
-	* @param State 			- the state that the building is in.
-	* @param City 			- the city the building is in.
-	* @param zip 			- the zip code for the building.
+	* @param a1 			- a refferance to the address class
 	* @param Floors 		- how many floors that are in the building.
 	*/
 	Building(Address a1, int Floors)
