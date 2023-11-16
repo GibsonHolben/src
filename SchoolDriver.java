@@ -40,18 +40,20 @@ public class SchoolDriver
 								(short) 18);
 		
 		
+		//toString
 		System.out.println(s3.toString());
-		
-		System.out.println("Testing printAll");
-		
+
+		//print all
 		s3.printAll();
 		
+		//calc total
 		System.out.println("Testing the calcTotalStudents");
 		System.out.println("Number of classrooms: " + s3.getNumOfClassrooms());
 		System.out.println("number of stuents per classroom: " + s3.getNumOfStudentsPerClass());
 		System.out.println("The total number of students is: " + s3.calcTotalStudents());
 		
-		 testGettersandSetters(s3);
+		//getters and setters
+		testGettersandSetters(s3);
 		System.out.println("**************************************\n");
 
 	}
