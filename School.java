@@ -225,7 +225,10 @@ public class School extends Building
 	}
 	
 	
-	
+	/**
+	 * Calculates the amount of students in the school
+	 * @return numOfStudentsPerClass * numOfClassrooms
+	 */
 	public long calcTotalStudents()
 	{
 		long l = numOfStudentsPerClass * numOfClassrooms;

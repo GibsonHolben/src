@@ -49,16 +49,36 @@ public class SchoolDriver
 		System.out.println("Testing the calcTotalStudents");
 		System.out.println("Number of classrooms: " + s3.getNumOfClassrooms());
 		System.out.println("number of stuents per classroom: " + s3.getNumOfStudentsPerClass());
+		System.out.println("The total number of students is: " + s3.calcTotalStudents());
 		
-		
+		 testGettersandSetters(s3);
 		System.out.println("**************************************\n");
 
 	}
 	
-	
-	public static void testGettersNadSetters(School s)
+	/**
+	 * Tests the getters and setters
+	 * @param s the School that the test is run on
+	 */
+	public static void testGettersandSetters(School s)
 	{
+		System.out.println("Getters / setters");
+		System.out.println(s.getName());
+		System.out.println(s.getNumOfParkingLotSpaces());
+		System.out.println(s.getParkingLotType());
+		System.out.println(s.getNumOfClassrooms());
+		System.out.println(s.getNumOfStudentsPerClass());
 		
+		s.setName("NewNameSchool");
+		s.setNumOfParkingLotSpaces((short) 123);
+		s.setParkingLotType("BIG");
+		s.setNumOfClassrooms((short) 24);
+		
+		System.out.println(s.getName());
+		System.out.println(s.getNumOfParkingLotSpaces());
+		System.out.println(s.getParkingLotType());
+		System.out.println(s.getNumOfClassrooms());
+		System.out.println(s.getNumOfStudentsPerClass());
 	}
 
 }
