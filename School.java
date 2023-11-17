@@ -234,5 +234,4 @@ public class School extends Building
 		long l = numOfStudentsPerClass * numOfClassrooms;
 		return l;
 	}
-	
 }
