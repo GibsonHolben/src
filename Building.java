@@ -284,6 +284,7 @@ public class Building
 	*/
 	public void printAll()
 	{
+		A1.printAll();
 		System.out.println("Rooms: " +  rooms);
 		System.out.println("Foundation: " + Foundation);
 		System.out.println("Roof: " + Roof);
@@ -292,7 +293,7 @@ public class Building
 		System.out.println("floors: " + floors);
 		System.out.println("ID: " + ID);
 		
-		A1.printAll();
+
 	}
 	
 	/**

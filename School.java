@@ -92,7 +92,7 @@ public class School extends Building
 	 * @param numOfParkingLotSpaces the number of parking 
 	 * spaces in the parking lot
 	 * @param ParkingLotType the type of parking lot
-	 *  that the school has
+	 * that the school has
 	 */
 	School(Address a1,
 			int Floors,
@@ -105,7 +105,7 @@ public class School extends Building
 			short numberOfStudents,
 			short Numberofclassrooms, 
 			short numOfParkingLotSpaces, 
-			String ParkingLotType )
+			String ParkingLotType)
 	{
 		super(a1, Floors);
 		
@@ -306,7 +306,7 @@ public class School extends Building
 		String s1 = Name + "|" + numOfClassrooms +
 				"|" + numOfStudentsPerClass + "|"
 				+ numOfParkingLotSpaces + "|" + ParkingLotType; 
-		return super.getA1().toString() + super.toString() + s1 ;
+		return super.toString() + s1 ;
 	}
 
 	/**
@@ -316,10 +316,10 @@ public class School extends Building
 	public void printAll()
 	{
 		super.printAll();
-		System.out.println("numOfParkingLotSpaces: " + numOfParkingLotSpaces);
-		System.out.println("ParkingLotType: " + ParkingLotType);
-		System.out.println("numOfClassrooms: " + numOfClassrooms);
-		System.out.println("numOfStudentsPerClass: " + numOfStudentsPerClass);
+		System.out.println("num Of Parking Lot Spaces: " + numOfParkingLotSpaces);
+		System.out.println("Parking Lot Type: " + ParkingLotType);
+		System.out.println("num Of Classrooms: " + numOfClassrooms);
+		System.out.println("num Of Students Per Class: " + numOfStudentsPerClass);
 	}
 	
 	

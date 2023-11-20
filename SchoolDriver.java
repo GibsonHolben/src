@@ -14,11 +14,13 @@ public class SchoolDriver
 		//Constructor1
 		System.out.println("**************************************S1");
 		School s1 = new School();
+		System.out.println(s1.toString());
 		System.out.println("**************************************\n");
 		
 		//Constructor2
 		System.out.println("**************************************S2");
 		School s2 = new School(A1, 6);
+		System.out.println(s2.toString());
 		System.out.println("**************************************\n");
 		
 		//Constructor3
@@ -26,12 +28,14 @@ public class SchoolDriver
 		School s3 = new School("12345 happy road", "MI", 
 					"Clarkston", 58395, 4, "Strong",
 					"Shingles", 45, 24.5f, 24.8f);
+		System.out.println(s3.toString());
 		System.out.println("**************************************\n");
 		
 		//Constructor4
 		System.out.println("**************************************S4");
 		School s4 = new School(A1, 24, "Weak", "Flat", 46, 13.5f, 
 				26.7f, "OSTC", (short) 44, (short) 12,(short)  56, "Small");
+		System.out.println(s4.toString());
 		System.out.println("**************************************\n");
 
 		
@@ -39,6 +43,7 @@ public class SchoolDriver
 		//Constructor5
 		System.out.println("**************************************S5");
 		School s5 = new School(A1, 35, "GIBSON SCHOOL", (short) 32, "Big");
+		System.out.println(s5.toString());
 		System.out.println("**************************************\n");
 		
 		//Constructor6
@@ -64,9 +69,10 @@ public class SchoolDriver
 		System.out.println(s6.toString());
 
 		//print all
-		System.out.println("***********************");
+		System.out.println("\n");
+		System.out.println("***********************PrintAll");
 		s6.printAll();
-		System.out.println("***********************\n");
+		System.out.println("***********************PrintAll\n");
 		
 		//calc total
 		System.out.println("Testing the calcTotalStudents");
