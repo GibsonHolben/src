@@ -9,21 +9,41 @@ public class SchoolDriver
 
 	public static void main(String[] args)
 	{
+		Address A1 = new Address("4934 Pear2 Lane", "Clarkston2", "MI", 48353);
+		
+		//Constructor1
 		System.out.println("**************************************S1");
-		//Testing the default constructors
 		School s1 = new School();
 		System.out.println("**************************************\n");
 		
+		//Constructor2
 		System.out.println("**************************************S2");
-		//Testing the middle constructor
-		Address A1 = new Address("4934 Pear2 Lane", "Clarkston2", "MI", 48353);
-		School s2 = new School(A1, 4, "OSTC", (short) 130, "Concreete");
+		School s2 = new School(A1, 6);
 		System.out.println("**************************************\n");
 		
-		
+		//Constructor3
 		System.out.println("**************************************S3");
-		//Testing the main constructor
-		School s3 = new School("532 gibson road", 
+		School s3 = new School("12345 happy road", "MI", 
+					"Clarkston", 58395, 4, "Strong",
+					"Shingles", 45, 24.5f, 24.8f);
+		System.out.println("**************************************\n");
+		
+		//Constructor4
+		System.out.println("**************************************S4");
+		School s4 = new School(A1, 24, "Weak", "Flat", 46, 13.5f, 
+				26.7f, "OSTC", (short) 44, (short) 12,(short)  56, "Small");
+		System.out.println("**************************************\n");
+
+		
+		
+		//Constructor5
+		System.out.println("**************************************S5");
+		School s5 = new School(A1, 35, "GIBSON SCHOOL", (short) 32, "Big");
+		System.out.println("**************************************\n");
+		
+		//Constructor6
+		System.out.println("**************************************S6");
+		School s6 = new School("532 gibson road", 
 								"MI",
 								"Gibsonville",
 								95724,
@@ -41,19 +61,21 @@ public class SchoolDriver
 		
 		
 		//toString
-		System.out.println(s3.toString());
+		System.out.println(s6.toString());
 
 		//print all
-		s3.printAll();
+		System.out.println("***********************");
+		s6.printAll();
+		System.out.println("***********************\n");
 		
 		//calc total
 		System.out.println("Testing the calcTotalStudents");
-		System.out.println("Number of classrooms: " + s3.getNumOfClassrooms());
-		System.out.println("number of stuents per classroom: " + s3.getNumOfStudentsPerClass());
-		System.out.println("The total number of students is: " + s3.calcTotalStudents());
+		System.out.println("Number of classrooms: " + s6.getNumOfClassrooms());
+		System.out.println("number of stuents per classroom: " + s6.getNumOfStudentsPerClass());
+		System.out.println("The total number of students is: " + s6.calcTotalStudents());
 		
 		//getters and setters
-		testGettersandSetters(s3);
+		testGettersandSetters(s6);
 		System.out.println("**************************************\n");
 
 	}

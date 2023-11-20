@@ -29,7 +29,10 @@ public class School extends Building
 	 * Default = Blank*/
 	private String 	ParkingLotType = "";
 	
-	//Constructors
+	
+
+	
+	//Constructor 1 (Building)
 	/**
 	 * The default constructor
 	 */
@@ -38,17 +41,100 @@ public class School extends Building
 		super();
 	}
 	
-	
+	//Constructor 2 (Building)
 	/**
-	 * Overloaded constructor that creates a School with
-	 *  a address and the parking lot
-	 *  
-	 * @param a1 The address object
-	 * @param Floors The number of floors that the building has
-	 * @param Name The name of the school
-	 * @param numOfParkingLotSpaces The number of
-	 * parking spaces in the parking lot
-	 * @param ParkingLotType THe type of parking lot 
+	* Overload constructor that calls the 2nd building constructor
+	* @param a1 			- a refferance to the address class
+	* @param Floors 		- how many floors that are in the building.
+	*/
+	School(Address a1, int Floors)
+	{
+		super(a1, Floors);
+		
+	}
+	
+	//Construcor 3 (Building)
+	/**
+	* Calls the 3rd constructor from the Building class
+	* @param StreetAddress The address of the building
+	* @param State The state that the building is in
+	* @param City The city the building is in
+	* @param zip The zip code for the building
+	* @param Floors How many floors that are in the building
+	* @param Foundation	The type of foundation for the building
+	* @param Roof The type of roof on the building
+	* @param Rooms How many rooms that are in the building
+	* @param length The length of the building
+	* @param width The width of the building
+	*/
+	School(String StreetAddress, String State, String City, int zip,
+				int Floors, String Foundation,String Roof,
+				int Rooms, float length, float width)
+	{
+		super(StreetAddress, State, City,
+				zip, Floors, Foundation, Roof, Rooms, length, width);
+
+	}
+	
+	
+	//Constructor 4
+	/**
+	 * Constructor that takes in an existing address and
+	 * creates a building + school with the passed in variables
+	 * @param a1 the address object
+	 * @param Floors  How many floors that are in the building
+	 * @param Foundation The type of foundation for the building
+	 * @param Roof The type of roof on the building
+	 * @param Rooms How many rooms that are in the building
+	 * @param length  The length of the building
+	 * @param width the width of the building
+	 * @param Name the name of the school
+	 * @param numOfParkingLotSpaces the number of parking 
+	 * spaces in the parking lot
+	 * @param ParkingLotType the type of parking lot
+	 *  that the school has
+	 */
+	School(Address a1,
+			int Floors,
+			String Foundation,
+			String Roof,
+			int Rooms, 
+			float length, 
+			float width,
+			String Name,
+			short numberOfStudents,
+			short Numberofclassrooms, 
+			short numOfParkingLotSpaces, 
+			String ParkingLotType )
+	{
+		super(a1, Floors);
+		
+		
+		this.setFoundation(Foundation);
+		this.setRoof(Roof);
+		this.setRooms(Rooms);
+		this.setLength(length);
+		this.setWidth(width);
+		
+		this.Name = Name;
+		this.numOfParkingLotSpaces = numOfParkingLotSpaces;
+		this.ParkingLotType = ParkingLotType;
+		this.numOfStudentsPerClass =  numberOfStudents;
+		this.numOfClassrooms = Numberofclassrooms;
+	}
+	
+	
+	
+	
+	
+	//Constructor 5 (done)
+	/**
+	 * Constructor that takes in an existing address and the school variables
+	 * @param a1 The address
+	 * @param Floors the amount of floors
+	 * @param Name the name of the school 
+	 * @param numOfParkingLotSpaces the amount of parking lot spaces
+	 * @param ParkingLotType the type of parking lot the school has
 	 */
 	School(Address a1,
 			int Floors, 
@@ -62,7 +148,10 @@ public class School extends Building
 		this.ParkingLotType = ParkingLotType;
 	}
 	
+
 	
+	
+	//Constructor 6 (done)
 	/**
 	 * Overloaded constructor that creates a school and takes 
 	 * in all the address variables, the building variables,
@@ -112,6 +201,16 @@ public class School extends Building
 		this.numOfStudentsPerClass = numOfStudentsPerClass;
 	}
 
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
 	
 	//Getters and setters
 
@@ -216,7 +315,6 @@ public class School extends Building
 	 */
 	public void printAll()
 	{
-		super.getA1().printAll();
 		super.printAll();
 		System.out.println("numOfParkingLotSpaces: " + numOfParkingLotSpaces);
 		System.out.println("ParkingLotType: " + ParkingLotType);

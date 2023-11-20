@@ -84,7 +84,6 @@ public class Building
 		ID = Building.totalNumberofBuilding;
 		A1 = a1;
 		this.floors = Floors;
-		//System.out.println("Stop");
 	}
 	
 	/**
