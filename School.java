@@ -44,8 +44,8 @@ public class School extends Building
 	//Constructor 2 (Building)
 	/**
 	* Overload constructor that calls the 2nd building constructor
-	* @param a1 			- a refferance to the address class
-	* @param Floors 		- how many floors that are in the building.
+	* @param a1 a refferance to the address class
+	* @param Floors  how many floors that are in the building.
 	*/
 	School(Address a1, int Floors)
 	{
@@ -67,12 +67,14 @@ public class School extends Building
 	* @param length The length of the building
 	* @param width The width of the building
 	*/
-	School(String StreetAddress, String State, String City, int zip,
+	School(String StreetAddress, String State, String City,
+				int zip,
 				int Floors, String Foundation,String Roof,
 				int Rooms, float length, float width)
 	{
 		super(StreetAddress, State, City,
-				zip, Floors, Foundation, Roof, Rooms, length, width);
+				zip, Floors, Foundation, Roof,
+				Rooms, length, width);
 
 	}
 	
@@ -129,12 +131,15 @@ public class School extends Building
 	
 	//Constructor 5 (done)
 	/**
-	 * Constructor that takes in an existing address and the school variables
+	 * Constructor that takes in an existing
+     * address and the school variables
 	 * @param a1 The address
 	 * @param Floors the amount of floors
 	 * @param Name the name of the school 
-	 * @param numOfParkingLotSpaces the amount of parking lot spaces
-	 * @param ParkingLotType the type of parking lot the school has
+	 * @param numOfParkingLotSpaces the amount of 
+	 * parking lot spaces
+	 * @param ParkingLotType the type of parking 
+	 * lot the school has
 	 */
 	School(Address a1,
 			int Floors, 
@@ -171,7 +176,8 @@ public class School extends Building
 	 * @param numOfParkingLotSpaces The number of
 	 * parking spaces in the parking lot
 	 * @param ParkingLotType THe type of parking lot 
-	 * @param numOfStudentsPerClass The number of students per classroom
+	 * @param numOfStudentsPerClass The number
+	 *  of students per classroom
 	 * @param numOfClassrooms The number of classrooms in the school
 	 */
 	School(String StreetAddress, 
@@ -202,112 +208,106 @@ public class School extends Building
 	}
 
 	
-	
-	
-	
 
-	
-	
-	
-	
-	
 	
 	//Getters and setters
-
 	/**
-	 * 
+	 * Returns name 
 	 * @return the name
 	 */
 	public String getName() {
 		return Name;
 	}
 
-
 	/**
-	 * @param name the name to set
+	 * Sets name
+	 * @param name the new name 
 	 */
 	public void setName(String name) {
 		Name = name;
 	}
 
-
 	/**
+	 * Returns numOfClassrooms 
 	 * @return the numOfClassrooms
 	 */
 	public short getNumOfClassrooms() {
 		return numOfClassrooms;
 	}
 
-
 	/**
-	 * @param numOfClassrooms the numOfClassrooms to set
+	 * Sets numOfClassrooms
+	 * @param numOfClassrooms the new numOfClassrooms 
 	 */
 	public void setNumOfClassrooms(short numOfClassrooms) {
 		this.numOfClassrooms = numOfClassrooms;
 	}
 
-
 	/**
+	 * Returns numOfStudentsPerClass 
 	 * @return the numOfStudentsPerClass
 	 */
 	public short getNumOfStudentsPerClass() {
 		return numOfStudentsPerClass;
 	}
 
-
 	/**
-	 * @param numOfStudentsPerClass the numOfStudentsPerClass to set
+	 * Sets numOfStudentsPerClass
+	 * @param numOfStudentsPerClass the new numOfStudentsPerClass 
 	 */
 	public void setNumOfStudentsPerClass(short numOfStudentsPerClass) {
 		this.numOfStudentsPerClass = numOfStudentsPerClass;
 	}
 
-
 	/**
+	 * Returns numOfParkingLotSpaces 
 	 * @return the numOfParkingLotSpaces
 	 */
 	public short getNumOfParkingLotSpaces() {
 		return numOfParkingLotSpaces;
 	}
 
-
 	/**
-	 * @param numOfParkingLotSpaces the numOfParkingLotSpaces to set
+	 * Sets numOfParkingLotSpaces
+	 * @param numOfParkingLotSpaces the new numOfParkingLotSpaces 
 	 */
 	public void setNumOfParkingLotSpaces(short numOfParkingLotSpaces) {
 		this.numOfParkingLotSpaces = numOfParkingLotSpaces;
 	}
 
-
 	/**
+	 * Returns parkingLotType 
 	 * @return the parkingLotType
 	 */
 	public String getParkingLotType() {
 		return ParkingLotType;
 	}
 
-
 	/**
-	 * @param parkingLotType the parkingLotType to set
+	 * Sets parkingLotType
+	 * @param parkingLotType the new parkingLotType 
 	 */
 	public void setParkingLotType(String parkingLotType) {
 		ParkingLotType = parkingLotType;
 	}
-
-
+	
+	
+	//Methods
 	/**
 	 * Returns the variables of all the superclass
-	 *  and the superclasses hasA is a CSV format
+	 * and the superclasses hasA is a CSV format
 	 * @return super.getA1().toString() + super.toString() 
-	 * + schools variables
+	 * + schools variables 
+	 * Deliminator = |
 	 */
-	public String toString() 
+	public String toString()
 	{
 		String s1 = Name + "|" + numOfClassrooms +
 				"|" + numOfStudentsPerClass + "|"
 				+ numOfParkingLotSpaces + "|" + ParkingLotType; 
-		return super.toString() + s1 ;
+		return super.toString() + "|" + s1 ;
 	}
+
 
 	/**
 	 * Prints all the variables from the superclass
@@ -316,10 +316,14 @@ public class School extends Building
 	public void printAll()
 	{
 		super.printAll();
-		System.out.println("num Of Parking Lot Spaces: " + numOfParkingLotSpaces);
-		System.out.println("Parking Lot Type: " + ParkingLotType);
-		System.out.println("num Of Classrooms: " + numOfClassrooms);
-		System.out.println("num Of Students Per Class: " + numOfStudentsPerClass);
+		System.out.println("num Of Parking Lot Spaces: " +
+							numOfParkingLotSpaces);
+		System.out.println("Parking Lot Type: " 		 + 
+							ParkingLotType);
+		System.out.println("num Of Classrooms: " 		 + 
+							numOfClassrooms);
+		System.out.println("num Of Students Per Class: " + 
+							numOfStudentsPerClass);
 	}
 	
 	
@@ -329,7 +333,6 @@ public class School extends Building
 	 */
 	public long calcTotalStudents()
 	{
-		long l = numOfStudentsPerClass * numOfClassrooms;
-		return l;
+		return numOfStudentsPerClass * numOfClassrooms;
 	}
 }

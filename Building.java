@@ -69,7 +69,7 @@ public class Building
 	*/
 	Building()
 	{
-		Building.totalNumberofBuilding = Building.totalNumberofBuilding +1;
+		Building.totalNumberofBuilding += 1;
 		ID = Building.totalNumberofBuilding;
 		A1 = new Address();
 	}
@@ -80,7 +80,7 @@ public class Building
 	*/
 	Building(Address a1, int Floors)
 	{
-		Building.totalNumberofBuilding = Building.totalNumberofBuilding +1;
+		Building.totalNumberofBuilding += 1;
 		ID = Building.totalNumberofBuilding;
 		A1 = a1;
 		this.floors = Floors;
@@ -99,11 +99,12 @@ public class Building
 	* @param length 		- The length of the building.
 	* @param width 			- The width of the building.
 	*/
-	Building(String StreetAddress, String State, String City, int zip,
+	Building(String StreetAddress, String State,
+				String City, int zip,
 	int Floors, String Foundation,String Roof,
 	int Rooms, float length, float width)
 	{
-		Building.totalNumberofBuilding = Building.totalNumberofBuilding +1;
+		Building.totalNumberofBuilding += 1;
 		ID = Building.totalNumberofBuilding;
 		A1 = new Address(StreetAddress,State,City,zip);
 		this.floors = Floors;

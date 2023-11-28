@@ -5,19 +5,22 @@ public class BuildingDriver
 	{
 		Building BG1 = new Building();
 		//Testing
-		Address A1 = new Address("4934 Pear2 Lane", "Clarkston2", "MI", 48353);
+		Address A1 = new Address("4934 Pear2 Lane",
+									"Clarkston2", "MI", 48353);
 		Building BG2 = new Building(A1, 2);
 		
-		Building BG3 = new Building("123 Rainbow lane", "MI", "Detroit",
+		Building BG3 = new Building("123 Rainbow lane",
+										"MI", "Detroit",
 		48203, 2, "Strong", "Shingles", 4, 14.3f, 23f);
 		
 		
 		
-		//***********************************************************
+		//***********************************************
 		System.out.println("GETTERS AND SETTERS");
 		System.out.println("**********************************");
 		System.out.println(BG1.getA1());
-		Address A2 = new Address("4934 Pear Lane", "Clarkston", "MI", 48353);
+		Address A2 = new Address("4934 Pear Lane",
+								"Clarkston", "MI", 48353);
 		BG1.setA1(A2);
 		System.out.println(BG1.getA1());
 		System.out.println(BG1.getFloors());
@@ -42,7 +45,7 @@ public class BuildingDriver
 		
 		
 		
-		//***********************************************************
+		//**********************************************
 		System.out.println("toString");
 		System.out.println("**********************************");
 		System.out.println(BG3.toString());
@@ -50,7 +53,7 @@ public class BuildingDriver
 		
 		
 		
-		//***********************************************************
+		//***********************************************
 		System.out.println("printAll");
 		System.out.println("**********************************");
 		BG3.printAll();
@@ -58,7 +61,7 @@ public class BuildingDriver
 		
 		
 		
-		//***********************************************************
+		//************************************************
 		System.out.println("calcSqrFt");
 		System.out.println("**********************************");
 		System.out.println(BG3.getWidth());
@@ -69,11 +72,12 @@ public class BuildingDriver
 		
 		
 		
-		//***********************************************************
+		//***********************************************
 		System.out.println("Getting from address");
 		System.out.println("**********************************");
 		System.out.println(BG1.getA1().getCity());
-		Address A3 = new Address("4934 Pear Lane", "Lake Orion", "MI", 48353);
+		Address A3 = new Address("4934 Pear Lane", "Lake Orion",
+									"MI", 48353);
 		BG1.setA1(A3);
 		System.out.println(BG1.getA1().getCity());
 		System.out.println("**********************************\n");
